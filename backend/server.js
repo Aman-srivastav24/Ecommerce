@@ -2,6 +2,7 @@ import express from 'express';
 import  connectDB from './config/db.js'
 import dotenv from 'dotenv'
 import authRoutes from './routes/authRoutes.js'
+import cors from 'cors'
 
 dotenv.config();
 
@@ -10,6 +11,8 @@ const app = express();
 
 //Middleware
 app.use(express.json());
+app.use(cors());
+
 
 //Connect To MongoDB
 
