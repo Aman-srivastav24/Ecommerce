@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Register from './pages/Register.jsx';
+import ProductPage from './pages/ProductPage.jsx';
 
 function App() {
   const router = createBrowserRouter([
@@ -25,6 +26,10 @@ function App() {
         },{
           path: "register",
           element: <Register />
+        },{
+          path:"product",
+          element:<ProductPage/>
+
         }
       ]
     }
